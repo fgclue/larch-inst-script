@@ -1,0 +1,104 @@
+
+ [ clue's Arch Install Script ]
+
+- This script installs all the software I need and configures the system.
+! Automatic partitioning has not been added yet. You will have to configure partitions automatically with cfdisk. Automatic Partioning will be added soon.
+
+! The DEFAULT keyboard layout will be set to br-abnt2 because I use a keyboard with the pt-BR (ABNT2) keyboard layout.
+
+! This script will require you to type the disk you want to install arch on and will wipe it. Please make sure the disk you're gonna use does not have ANY important data.
+
+=> This script will install:
+|> GUI:
+==== DEs & WMs
+--- Sway, KDE, GNOME, i3, Hyprland, Weston (pre-installed with KDE) and Cinnamon
+==== Login Managers
+--- SDDM and GDM (Default)
+==== IDE, Text Editors and Development
+--- Android Studio, Vim, Nano, Vi, Neovim, Xed, ImHex, Glade,
+Cambalache, Arduino IDE, Godot Engine, Python IDLE and OpenJDK
+==== Virtualization
+--- GNOME Boxes and Virt-Manager
+==== Web Browsers
+--- Firefox
+==== File Managers
+--- Nautilus, CoreFM and Nemo
+==== GUI Package Managers
+--- Discover and GNOME Software
+==== Games
+--- Steam AisleRiot Solitaire
+==== Image Editors
+--- Inkscape, Krita and GIMP
+==== Video Editors
+--- Kdenlive and Shotcut
+==== Terminals
+--- Kitty, Xterm and Terminator and foot/fcft
+==== Notes
+--- Obsidian
+==== GNOME Software
+--- GNOME Calculator, GNOME Tweaks, GNOME File Roller,
+GNOME Weather, GNOME Chess, GNOME Clocks, GNOME Contacts, 
+GNOME Caracther Map, GNOME Caracthers, GNOME Bulk Rename, 
+GNOME Chess, GNOME Calendar, GNOME Contacts, GNOME Connections,
+GNOME System Monitor, GNOME Photos and GNOME Weather
+==== App Launchers
+--- Ulauncher, dmenu and Rofi
+==== Screenshots
+--- Flameshot
+==== Wallpapers
+--- swaybg, hyprpaper and Nitrogen
+==== Learning
+--- Anki
+==== Password Managers
+--- KeePassXC
+==== CAD and 3D Models
+--- Blender and FreeCAD
+==== Photos
+--- Cheese, Shotwell and feh
+==== Customization
+--- LxAppearence
+==== Chat
+--- Discord
+==== Shells
+--- fish, zsh, dash, bash and nu Shell
+==== Fonts
+--- FontForge
+==== Git GUI
+--- gitg
+==== Sysadmin
+--- Htop, top, sudo and doas (opendoas)
+==== Office
+--- LibreOffice and Scribus
+==== Emulation
+--- melonDS
+==== Video
+--- mpv
+==== Screen Capture
+--- OBS Studio
+==== Compositors
+--- picom
+==== Docks
+--- Plank
+==== Email
+--- Thunderbird
+==== Default X-apps
+--- xeyes, xsnow and XCalc
+==== Disks, USBs, CDs and DVDs
+--- Xfburn, fdisk and cfdisk
+
+|> CLI:
+
+GNU CoreUtils, gcc, g++, bat, cargo, Rust, Ruby, brew,
+gh CLI, gh-helper, jscli, CMake, make, git, NodeJS,
+bfetch, neofetch, Python, libvirt, QEMU, Thunar and
+yt-dlp (included with mpv).
+
+::::
+
+Ok, I want to install, what do I do now?
+Press q and anwser "y" or "yes" to install.
+
+Ok, but I don't want to install, what do I do?
+Press q and type "n" or "no".
+
+-- github.com/fgclue/larch-inst-script --
