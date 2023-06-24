@@ -34,6 +34,10 @@ else
 	echo "Connection test completed."
 fi
 
+curl https://raw.githubusercontent.com/fgclue/larch-inst-script/master/overview.txt > overview.txt
+curl https://raw.githubusercontent.com/fgclue/larch-inst-script/master/first-boot.sh > first-boot.sh
+curl https://raw.githubusercontent.com/fgclue/larch-inst-script/master/post-inst.sh > post-inst.sh
+
 cat overview.txt | less
 
 # Read input:
@@ -76,3 +80,9 @@ echo "==> Creating fstab file..."
 genfstab -U /mnt >> /mnt/etc/fstab
 
 echo "==> Running Post-Install Scripts..."
+echo "==> Copying scripts..."
+cp first-boot.sh /mnt/first-boot.sh
+cp post-inst.sh /mnt/first-boot.sh
+chmod +x /mnt/first-boot.sh
+chmod +x /mnt/post-inst.sh
+arch-chroot /mnt /post-inst.sh
